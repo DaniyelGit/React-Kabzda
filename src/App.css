@@ -2,10 +2,6 @@ body {
     padding: 15px;
 }
 
-input {
-    display: block;
-    margin-bottom: 10px;
-}
 
 .trackInput {
     display: inline-block;

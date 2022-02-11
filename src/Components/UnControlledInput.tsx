@@ -4,14 +4,18 @@ import React, {ChangeEvent} from 'react';
 
 export const UnControlledInput = () => {
     return (
-        <input type="text"/>
+        <div>
+            <input type="text"/>
+        </div>
     );
 };
 
 
 export const ControlledInput = () => {
     return (
-        <input type="text" value={'it-incubator.by'}/>
+        <div>
+            <input type="text" value={'it-incubator.by'}/>
+        </div>
     );
 };
 
@@ -25,10 +29,10 @@ export const TrackValueOfUnControlledInput = () => {
     }
 
     return (
-        <>
+        <div>
             <input className={'trackInput'} type="text" value={value} onChange={changeHandler}/>
             <span>---</span> {value}
-        </>
+        </div>
     );
 };
 
@@ -44,9 +48,9 @@ export const GetValueOfUncontrolledInputByButtonPress = () => {
 
 
     return (
-        <>
+        <div>
             <input type="text" ref={inputRef}/>
             <button onClick={clickHandler}>push</button> {value}
-        </>
+        </div>
     );
 };

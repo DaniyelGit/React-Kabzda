@@ -1,28 +1,40 @@
 import React from 'react';
 import './App.css';
 
-
 import {
-    ControlledInput,
     GetValueOfUncontrolledInputByButtonPress,
     TrackValueOfUnControlledInput,
     UnControlledInput
 } from "./Components/UnControlledInput";
 
+import {
+    ControlledCheckBox,
+    ControlledComponents,
+    ControlledSelect
+} from './Components/ControlledComponents';
+
+
+
+
 function App() {
-
-
 
     return (
         <div>
+            <h3>Uncontrolled Input</h3>
             {/*UnControlledInput*/}
             <UnControlledInput/>
-            {/*ControlledInput*/}
-            <ControlledInput/>
             {/*TrackValueOfUnControlledInput*/}
             <TrackValueOfUnControlledInput/>
             {/*GetValueOfUncontrolledInputByButtonPress*/}
             <GetValueOfUncontrolledInputByButtonPress/>
+            <hr/>
+            <h3>Controlled Input / Checkbox / Select</h3>
+            {/*ControlledComponents*/}
+            <ControlledComponents/>
+            {/*ControlledCheckbox*/}
+            <ControlledCheckBox/>
+            {/*ControlledSelect*/}
+            <ControlledSelect/>
         </div>
     );
 }
