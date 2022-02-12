@@ -13,6 +13,7 @@ import {
     ControlledSelect
 } from './Components/ControlledComponents';
 import {Accordion} from "./Components/Accordion/Accordion";
+import {Select} from "./Components/Select/Select";
 
 
 
@@ -46,6 +47,10 @@ function App() {
             <Accordion/>
 
             <hr/>
+
+            <h3>Select</h3>
+            {/*Select*/}
+            <Select/>
         </div>
     );
 }

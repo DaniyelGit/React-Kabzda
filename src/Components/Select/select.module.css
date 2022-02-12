@@ -1,0 +1,44 @@
+.wrapper {
+    padding: 20px;
+    height: 350px;
+    background-color: #494f4f;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    height: 50px;
+    padding: 10px 10px;
+    background-color: rgba(110, 121, 157, 0.51);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.selectTitle {
+    font-weight: 600;
+    color: #fff;
+}
+
+.selectBody {
+    max-width: 200px;
+    padding: 10px 10px;
+    background-color: rgba(110, 121, 157, 0.51);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.options {
+    padding: 10px 10px;
+    background-color: rgba(110, 121, 157, 0.51);
+    cursor: pointer;
+}
+
+.options + .options {
+    margin-top: 10px;
+}
+
+.options:hover {
+    background-color: rgba(110, 121, 159, .9);
+}
