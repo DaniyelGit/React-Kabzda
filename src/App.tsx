@@ -12,6 +12,7 @@ import {
     ControlledComponents,
     ControlledSelect
 } from './Components/ControlledComponents';
+import {Accordion} from "./Components/Accordion/Accordion";
 
 
 
@@ -27,7 +28,9 @@ function App() {
             <TrackValueOfUnControlledInput/>
             {/*GetValueOfUncontrolledInputByButtonPress*/}
             <GetValueOfUncontrolledInputByButtonPress/>
+
             <hr/>
+
             <h3>Controlled Input / Checkbox / Select</h3>
             {/*ControlledComponents*/}
             <ControlledComponents/>
@@ -35,6 +38,14 @@ function App() {
             <ControlledCheckBox/>
             {/*ControlledSelect*/}
             <ControlledSelect/>
+
+            <hr/>
+
+            <h3>Accordion</h3>
+            {/*Accordion*/}
+            <Accordion/>
+
+            <hr/>
         </div>
     );
 }
