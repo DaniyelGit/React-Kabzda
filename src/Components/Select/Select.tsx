@@ -8,6 +8,7 @@ import {SelectBody} from "./SelectBody";
 
 export const Select = () => {
 
+
     const names = ['Даниель', 'Виктория', 'Захар', 'Тереса', 'Андрей'];
     const [collapsed, setCollapsed] = React.useState<boolean>(false);
     const [value, setValue] = React.useState<string>('Имена')
