@@ -3,31 +3,33 @@ import s from './select.module.css';
 
 
 type SelectBodyPropsType = {
-    names: string[]
-    onChangeValue: (name: string) => void
+    stateNames: {id: string, name: string}[]
+    onChangeValue: (index: number) => void
+    activeItem: number
 }
 
 export const SelectBody = (props: SelectBodyPropsType) => {
 
     const {
-        names,
+        stateNames,
         onChangeValue,
+        activeItem,
     } = props
 
-    const handlerChangeValue = (name: string) => {
-        onChangeValue(name);
+    const handlerChangeValue = (index: number) => {
+        onChangeValue(index);
     }
 
     return (
         <div className={s.selectBody}>
             {
-                names.map((name, index) => {
+                stateNames.map((item, index) => {
                     return (
-                      <div key={`${name}_${index}`}
-                           className={s.options}
-                           onClick={() => handlerChangeValue(name)}
+                      <div key={`${item.id}`}
+                           className={`${s.options} ${activeItem === index ? s.activeItem : ''}`}
+                           onClick={() => handlerChangeValue(index)}
                       >
-                          {name}
+                          {item.name}
                       </div>
                     );
                 })

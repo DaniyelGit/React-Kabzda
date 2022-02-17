@@ -39,6 +39,7 @@
     margin-top: 10px;
 }
 
-.options:hover {
-    background-color: rgba(110, 121, 159, .9);
+.options:hover,
+.activeItem {
+    background-color: rgba(155, 166, 224, 0.9);
 }
