@@ -14,6 +14,7 @@ import {
 } from './Components/ControlledComponents';
 import {Accordion} from "./Components/Accordion/Accordion";
 import {Select} from "./Components/Select/Select";
+import {Rating} from "./Components/Rating/Rating";
 
 
 
@@ -51,6 +52,10 @@ function App() {
             <h3>Select</h3>
             {/*Select*/}
             <Select/>
+
+            <h3>Rating</h3>
+            {/*Rating*/}
+            <Rating/>
         </div>
     );
 }

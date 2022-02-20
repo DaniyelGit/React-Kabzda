@@ -23,3 +23,7 @@ body {
 .trackInput {
     display: inline-block;
 }
+
+.star {
+    color: darkorange;
+}
