@@ -1,14 +1,16 @@
 import React from 'react';
 import {AccordionTitle} from "./AccordionTitle";
 import {AccordionBody} from "./AccordionBody";
+import {AccordionReducer, changeCollapsedAC} from "../../reducers/AccordionReducer";
 
 
 
 export const Accordion = () => {
 
-    const [collapsed, setCollapsed] = React.useState<boolean>(true)
+    // const [collapsed, setCollapsed] = React.useState<boolean>(true)
 
-    const onChangeCollapsed = () => setCollapsed(!collapsed);
+    const [collapsed, setDispatch] = React.useReducer(AccordionReducer, true)
+    const onChangeCollapsed = () => setDispatch(changeCollapsedAC(!collapsed));
 
     return (
         <div>
