@@ -15,6 +15,7 @@ import {
 import {Accordion} from "./Components/Accordion/Accordion";
 import {Select} from "./Components/Select/Select";
 import {Rating} from "./Components/Rating/Rating";
+import {ReactMemo} from "./Components/ReactMemo/ReactMemo";
 
 
 
@@ -56,6 +57,10 @@ function App() {
             <h3>Rating</h3>
             {/*Rating*/}
             <Rating/>
+
+            <h3>HOK --- React.memo</h3>
+            {/*HOK --- React.memo*/}
+            <ReactMemo/>
         </div>
     );
 }

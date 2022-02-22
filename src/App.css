@@ -16,7 +16,7 @@ ul {
 }
 
 body {
-    padding: 15px;
+    padding: 15px 15px 200px;
 }
 
 
@@ -26,4 +26,9 @@ body {
 
 .starBg {
     color: darkorange;
+}
+
+.counter {
+    color: red;
+    font-size: 30px;
 }

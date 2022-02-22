@@ -8,19 +8,22 @@ export const Rating = () => {
 
     const starState: number[] = [1, 2, 3, 4, 5];
 
-    // const [active, setActive] = React.useState<number>(0);
-    const [active, setDispatch] = React.useReducer(RatingReducer, 0);
+    const [active, setActive] = React.useState<number>(0);
+    const [hoveredElement, setHoveredElement] = React.useState<number>(0);
+    // const [active, setDispatch] = React.useReducer(RatingReducer, 0);
 
 
     return (
         <div>
             {
                 starState.map((s, i) => {
+                    
                     return (
                       <Star key={i}
                             fontSize={'large'}
-                            onClick={() => setDispatch(changeActiveStarAC(i))}
-                            className={active > i ? 'starBg' : ''}
+                            onClick={() => setActive(i + 1)}
+                            className={hoveredElement > i ? 'starBg' : ''}
+                            onMouseEnter={() => setHoveredElement(i + 1)}
                       />
                     );
                 })
