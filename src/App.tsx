@@ -16,6 +16,7 @@ import {Accordion} from "./Components/Accordion/Accordion";
 import {Select} from "./Components/Select/Select";
 import {Rating} from "./Components/Rating/Rating";
 import {ReactMemo} from "./Components/ReactMemo/ReactMemo";
+import {UseMemo} from "./Components/UseMemo/UseMemo";
 
 
 
@@ -54,13 +55,23 @@ function App() {
             {/*Select*/}
             <Select/>
 
+            <hr/>
+
             <h3>Rating</h3>
             {/*Rating*/}
             <Rating/>
 
+            <hr/>
+
             <h3>HOK --- React.memo</h3>
             {/*HOK --- React.memo*/}
             <ReactMemo/>
+
+            <hr/>
+
+            <h3>HOOK --- useMemo</h3>
+            {/*HOOK --- useMemo*/}
+            <UseMemo/>
         </div>
     );
 }
