@@ -16,7 +16,7 @@ import {Accordion} from "./Components/Accordion/Accordion";
 import {Select} from "./Components/Select/Select";
 import {Rating} from "./Components/Rating/Rating";
 import {ReactMemo} from "./Components/ReactMemo/ReactMemo";
-import {UseMemo} from "./Components/UseMemo/UseMemo";
+import {HelpsToReactMemo, UseMemo} from "./Components/UseMemo/UseMemo";
 
 
 
@@ -72,6 +72,7 @@ function App() {
             <h3>HOOK --- useMemo</h3>
             {/*HOOK --- useMemo*/}
             <UseMemo/>
+            <HelpsToReactMemo/>
         </div>
     );
 }
