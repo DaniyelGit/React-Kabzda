@@ -6,7 +6,7 @@ import React from 'react';
 export const UseMemo = () => {
 
 
-    const [a, setA] = React.useState<number>(0);
+    const [a, setA] = React.useState<number>(1);
     const [b, setB] = React.useState<number>(0);
 
     let resultA = 1;
