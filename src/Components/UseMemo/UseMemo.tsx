@@ -1,8 +1,6 @@
 import React, {useMemo} from 'react';
 
 
-
-
 export const UseMemo = () => {
     const [a, setA] = React.useState<number>(0);
     const [b, setB] = React.useState<number>(0);
@@ -44,7 +42,6 @@ export const UseMemo = () => {
 };
 
 
-
 type UsersPropsType = {
     items: string[]
 }
@@ -72,6 +69,7 @@ export const HelpsToReactMemo = () => {
         return users.filter(name => name.toLowerCase().indexOf('а') > -1);
     }, [users])
 
+
     const addExampleInArr = () => {
         setUsers([...users, 'Андрей']);
     }
@@ -82,8 +80,10 @@ export const HelpsToReactMemo = () => {
         <div className={'marginTop'}>
             <button onClick={() => setCounter(counter + 1)}>+</button>
             {counter}
-            <button onClick={addExampleInArr}>add Example</button>
-            <UsersContainer items={newArray}/>
+            <div>
+                <button onClick={addExampleInArr}>add user</button>
+                <UsersContainer items={newArray}/>
+            </div>
         </div>
     );
 };

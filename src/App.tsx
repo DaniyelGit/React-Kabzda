@@ -17,6 +17,7 @@ import {Select} from "./Components/Select/Select";
 import {Rating} from "./Components/Rating/Rating";
 import {ReactMemo} from "./Components/ReactMemo/ReactMemo";
 import {HelpsToReactMemo, UseMemo} from "./Components/UseMemo/UseMemo";
+import {LikeUseCallBack} from "./Components/UseCallBack/UseCallBack";
 
 
 
@@ -73,6 +74,12 @@ function App() {
             {/*HOOK --- useMemo*/}
             <UseMemo/>
             <HelpsToReactMemo/>
+
+            <hr/>
+
+            <h3>HOOK --- useCallBack</h3>
+            {/*HOOK --- useCallBack*/}
+            <LikeUseCallBack/>
         </div>
     );
 }
