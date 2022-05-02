@@ -1,4 +1,5 @@
 import React, {useCallback, useMemo} from "react";
+import {CounterMemoized} from "./CounterMemoized";
 
 type UsersPropsType = {
     books: string[]
@@ -41,10 +42,15 @@ export const LikeUseCallBack = () => {
         setBooks([...books, 'Angular']);
     }, [books])
 
+    const memoizedChangeCount = useCallback(() => {
+        setCounter(counter + 1);
+    }, [counter])
+
     return (
         <div className={'marginTop'}>
-            <button onClick={() => setCounter(counter + 1)}>+</button>
-            {counter}
+
+            <CounterMemoized changeCount={memoizedChangeCount} counter={counter}/>
+
             <div>
                 <BookContainer books={books} addBock={memoizedAddBook}/>
             </div>
