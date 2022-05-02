@@ -71,7 +71,7 @@ export const HelpsToReactMemo = () => {
 
 
     const addExampleInArr = () => {
-        setUsers([...users, 'Андрей']);
+        setUsers([...users, 'Игорь']);
     }
 
     // const newArray = users.filter(name => name.toLowerCase().indexOf('a') > -1);
