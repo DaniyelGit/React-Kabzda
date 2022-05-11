@@ -19,7 +19,7 @@ import {ReactMemo} from "./Components/ReactMemo/ReactMemo";
 import {HelpsToReactMemo, UseMemo} from "./Components/UseMemo/UseMemo";
 import {LikeUseCallBack} from "./Components/UseCallBack/UseCallBack";
 import {SuperUseState} from "./Components/UseState/SuperUseState";
-import {UseEffect} from "./Components/useEffect/UseEffect";
+import {UseEffect} from "./Components/UseEffect/UseEffect";
 
 
 
@@ -92,7 +92,7 @@ function App() {
             <hr/>
 
             <h3>HOOK --- useEffect</h3>
-            {/*HOOK --- useEffect*/}
+            {/*HOOK --- UseEffect*/}
             <UseEffect/>
 
             <hr/>
