@@ -1,23 +1,32 @@
 import React, {useEffect, useState} from 'react';
 
+
+const setStringForClock = (num: number) => {
+    return num < 10 ? '0' + num : num;
+}
+
 export const Clock = () => {
 
     const initialDate = new Date();
     const [date, setDate] = useState(initialDate);
 
     useEffect(() => {
-        setInterval(() => {
+        const idInterval = setInterval(() => {
             setDate(new Date());
         }, 1000)
+
+        return () => {
+            clearInterval(idInterval);
+        }
 
     }, [])
 
 
     return (
         <div>
-            <span>{date.getHours() >= 10 ? date.getHours() : '0' + date.getHours()}</span>:
-            <span>{date.getMinutes() >= 10 ? date.getMinutes() : '0' + date.getMinutes()}</span>:
-            <span>{date.getSeconds() >= 10 ? date.getSeconds() : '0' + date.getSeconds()}</span>
+            <span>{setStringForClock(date.getHours())}</span>:
+            <span>{setStringForClock(date.getMinutes())}</span>:
+            <span>{setStringForClock(date.getSeconds())}</span>
         </div>
     );
 };
