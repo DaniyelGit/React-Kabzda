@@ -20,6 +20,7 @@ import {HelpsToReactMemo, UseMemo} from "./Components/UseMemo/UseMemo";
 import {LikeUseCallBack} from "./Components/UseCallBack/UseCallBack";
 import {SuperUseState} from "./Components/UseState/SuperUseState";
 import {UseEffect} from "./Components/UseEffect/UseEffect";
+import {Clock} from "./Components/Clock/Clock";
 
 
 
@@ -96,6 +97,10 @@ function App() {
             <UseEffect/>
 
             <hr/>
+
+            <h3>Часы</h3>
+            {/*Часы*/}
+            <Clock/>
 
 
         </div>
