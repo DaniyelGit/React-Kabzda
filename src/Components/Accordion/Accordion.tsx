@@ -7,8 +7,6 @@ import {AccordionReducer, changeCollapsedAC} from "../../reducers/AccordionReduc
 
 export const Accordion = () => {
 
-    // const [collapsed, setCollapsed] = React.useState<boolean>(true)
-
     const [collapsed, setDispatch] = React.useReducer(AccordionReducer, true)
     const onChangeCollapsed = () => setDispatch(changeCollapsedAC(!collapsed));
 

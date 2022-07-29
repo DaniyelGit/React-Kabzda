@@ -30,10 +30,10 @@ export const UseEffect = () => {
             document.title = counter.toString();
         }, 1000)*/
 
-        // setInterval(() => {
-        //     console.log('tick');
-        //     setCounter(state => state + 1);
-        // }, 1000)
+        /*setInterval(() => {
+            console.log('tick');
+            setCounter(state => state + 1);
+        }, 1000)*/
 
     }, [])
 
@@ -48,7 +48,7 @@ export const UseEffect = () => {
             <button onClick={() => setFake(state => state + 1)}>+</button>
             <div>{`Фейк - ${fake}`}</div>*/}
 
-            <span>{`Привет таймер ${counter}`}</span>
+            {/*<span>{`Привет таймер ${counter}`}</span>*/}
         </div>
     );
 };

@@ -18,7 +18,6 @@ export const Clock = () => {
         return () => {
             clearInterval(idInterval);
         }
-
     }, [])
 
 
